@@ -62,7 +62,6 @@ export const fetchPlugin = (inputCode: string) => {
         
         
             build.onLoad({ filter: /.*/ }, async (args: any) => {
-                console.log('onLoad', args);
 
                 const { data, request } = await axios.get(args.path);
 
