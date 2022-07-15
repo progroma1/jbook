@@ -14,7 +14,7 @@ const CodeCell = () => {
         const timer = setTimeout(async () => {
             const output = await bundle(input);
             setCode(output.code);
-            setErr(output.err);
+            // setErr(output.err);
         }, 800);
 
         return () => {
